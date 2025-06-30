@@ -8,7 +8,7 @@ services:
       - key: MONGO_URI
         value: mongodb+srv://timeflysesp:T3chs0ft@cluster0.cexxmqu.mongodb.net/ultimateai?retryWrites=true&w=majority&appName=Cluster0
       - key: PORT
-        value: "5000"
+        value: "5003"
 
   - type: web
     name: ultimateai-frontend
