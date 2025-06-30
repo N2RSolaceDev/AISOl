@@ -1,11 +1,9 @@
 {
-  "name": "frontend",
-  "private": true,
-  "version": "0.1.0",
+  "name": "ultimateai-frontend",
+  "version": "1.0.0",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "jest"
+    "build": "react-scripts build"
   },
   "dependencies": {
     "react": "^18.2.0",
