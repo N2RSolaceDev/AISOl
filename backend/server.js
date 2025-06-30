@@ -7,7 +7,7 @@ connectDB();
 
 const app = express();
 
-// ✅ Middleware correctly called as functions
+// ✅ Correct middleware usage — functions are called
 app.use(cors());
 app.use(express.json());
 
