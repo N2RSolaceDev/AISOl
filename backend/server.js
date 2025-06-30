@@ -7,9 +7,11 @@ connectDB();
 
 const app = express();
 
-app.use(cors()); // ✅ Now called as a function
+// ✅ Middleware correctly called as functions
+app.use(cors());
 app.use(express.json());
 
+// Routes
 app.use("/api/chat", chatRoutes);
 
 const PORT = process.env.PORT || 5000;
