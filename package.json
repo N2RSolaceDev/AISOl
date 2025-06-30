@@ -1,7 +1,7 @@
 {
   "name": "ultimateai",
   "version": "1.0.0",
-  "description": "Fully Unfiltered AI Chatbot with Memory & Coding Skills",
+  "description": "Fully Unfiltered AI Chatbot",
   "private": true,
   "scripts": {
     "start": "concurrently \"cd backend && node server.js\" \"cd frontend && npm start\"",
