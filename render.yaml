@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ultimateai-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://timeflysesp:T3chs0ft@cluster0.cexxmqu.mongodb.net/ultimateai?retryWrites=true&w=majority&appName=Cluster0
+      - key: PORT
+        value: "5000"
+
+  - type: web
+    name: ultimateai-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    path: frontend
+    staticPath: frontend/build
