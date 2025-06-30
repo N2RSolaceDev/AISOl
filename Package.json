@@ -1,13 +1,12 @@
 {
-  "name": "SolAI",
+  "name": "ultimateai",
   "version": "1.0.0",
-  "description": "Unfiltered AI Chatbot with MongoDB & LLM",
+  "description": "UltimateAI - Fully Unfiltered AI Chatbot",
   "private": true,
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "concurrently \"cd backend && node server.js\" \"cd frontend && npm start\"",
     "dev": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm start\"",
-    "build": "cd frontend && npm run build",
-    "lint": "eslint ."
+    "build": "cd frontend && npm run build"
   },
   "dependencies": {
     "concurrently": "^7.6.0",
