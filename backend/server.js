@@ -6,7 +6,8 @@ const chatRoutes = require("./routes/chat");
 connectDB();
 
 const app = express();
-app.use(cors());
+
+app.use(cors()); // ✅ Now called as a function
 app.use(express.json());
 
 app.use("/api/chat", chatRoutes);
